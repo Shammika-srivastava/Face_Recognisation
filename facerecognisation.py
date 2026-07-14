@@ -14,7 +14,7 @@ img = cv2.resize(image,None,fx=0.3,fy=0.3)
 imgGray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 #Detecting The Faces
-faces = face_cascade.detectMultiScale(imgGray, 1.2, 5)
+faces = face_cascade.detectMultiScale(imgGray, 1.1, 5)
 
 #Pointing The Faces
 for (x,y,w,h) in faces:
